@@ -1,34 +1,42 @@
 import React from "react";
 import "./Header.css";
 import logo from "../../assets/images/net.jpg";
+import SearchIcon from "@mui/icons-material/Search";
+import NotificationsIcon from "@mui/icons-material/Notifications";
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
+import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const Header = () => {
   return (
-    <div>
-      <div className=" flex-row  sm:flex sm:flex-row  items-center gap-6  bg-black text-white  justify-between heigth:100px;">
-        <div className="flex justify-between items-center p-4 h-20">
-          <ul className="flex-row  sm:flex sm:flex-row  items-center gap-6 background-color: transparent p-4 hieght:10vh;">
-            <li>
-              <img src={logo} alt="" width={100} />
-            </li>
-            <li>Home</li>
-            <li>TVShows</li>
-            <li>Movies</li>
-            <li>Latest</li>
-            <li>Mylist</li>
-            <li>Browse by language</li>
-          </ul>
-        </div>
+    <div className="container-fluid bg-black text-white p-3 d-flex justify-content-between align-items-center">
+      {/* Left side */}
+      <div className="col-md-6">
+        <ul className="d-flex list-unstyled mb-0 align-items-center gap-4">
+          <li>
+            <img src={logo} alt="Netflix Logo" width={100} />
+          </li>
+          <li>Home</li>
+          <li>TV Shows</li>
+          <li>Movies</li>
+          <li>Latest</li>
+          <li>My List</li>
+          <li>Browse by Language</li>
+        </ul>
+      </div>
 
-        <div className="flex justify-between items-center p-4 h-20">
-          <ul className="flex-row  sm:flex sm:flex-row  items-center gap-6 background-color: transparent p-4 hieght:10vh;">
-            <li>SearchIcon</li>
-            <li>NotificationIcon</li>
-            <li>AccountBoxIcon</li>
-            <li>ArrowDropDownIcon</li>
-          </ul>
-        </div>
-      </div>{" "}
+      {/* Right side */}
+      <div className="col-md-6 d-flex justify-content-end">
+        <ul className="d-flex list-unstyled mb-0 align-items-center gap-4">
+          <li>
+            <SearchIcon />
+          </li>
+          <li>
+            <NotificationsIcon />
+          </li>
+          <li><AccountBoxIcon/></li>
+          <li><ArrowDropDownIcon/></li>
+        </ul>
+      </div>
     </div>
   );
 };
