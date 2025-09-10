@@ -3,6 +3,7 @@ import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 import Banner from '../../Components/Banner/Banner';
 import React from 'react';
+import Rowlist from '../../Components/Rows/Rowlist/Rowlist';
 
 
 
@@ -11,6 +12,7 @@ const Home = () => {
     <>
       <Header />
       <Banner/>
+      <Rowlist/>
       <Footer />
     </>
   );
