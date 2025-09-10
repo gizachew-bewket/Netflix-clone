@@ -8,7 +8,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 
 const Header = () => {
   return (
-    <div className="container-fluid bg-black text-white p-3 d-flex justify-content-between align-items-center">
+    <div className="container-fluid bg-black text-white p-3 d-flex justify-content-between align-items-center header-static">
       {/* Left side */}
       <div className="col-md-6">
         <ul className="d-flex list-unstyled mb-0 align-items-center gap-4">
