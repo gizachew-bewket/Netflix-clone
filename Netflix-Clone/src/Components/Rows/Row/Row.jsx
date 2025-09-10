@@ -49,7 +49,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       <h2>{title}</h2>
 
       <div className="row__posters">
-        {movies.map(
+        {movies?.map(
           (movie) =>
             ((isLargeRow && movie.poster_path) ||
               (!isLargeRow && movie.backdrop_path)) && (
